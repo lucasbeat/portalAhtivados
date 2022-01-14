@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import SideBar from './components/SideBar/sideBar';
-import Header from './components/Header/Header';
 
 import Home from './pages/Home/Home';
 import Profile from './pages/Profile/Profile';
@@ -20,7 +19,6 @@ function App() {
       <SideBar />
       </div>
       <div className='content'>
-        
         <Routes>
           <Route exact path='/' element={<Home />} ></Route>
           <Route exact path='/profile' element={<Profile  />} ></Route>

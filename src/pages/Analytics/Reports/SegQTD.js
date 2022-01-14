@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 
 import api from '../../../services/api';
 import  DatePicker  from 'react-datepicker';
-
+import { Pie } from 'react-chartjs-2';
 import moment from "moment";
 
 import "react-datepicker/dist/react-datepicker.css";
-import { colors } from '../../../utils/colors';
-
-import { Pie } from 'react-chartjs-2';
+import '../styles.css';
 
 const SegQTD = () => {
   const [filterData, setFilterData] = useState([]);
@@ -38,8 +36,8 @@ const SegQTD = () => {
   }
 
   const filtro = () => {
-    const labels = []
-    const dataPoints = []
+      const labels = []
+      const dataPoints = []
     
       api.post('filter', data).then(res => {
         
@@ -89,14 +87,21 @@ const SegQTD = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [endDate]);
 
- 
  return (
-   <div>
-   <Pie data={filterData} height={160} width={200} />
-   <DatePicker  selected={startDate}  onChange={dateStartHandle} dateFormat="dd/MM/yyyy" />
-   <DatePicker  selected={endDate}  onChange={dateEndHandle} dateFormat="dd/MM/yyyy" />
-
+   <div className="segqtd-main">
+     <div className="segqtd-chart">
+     <Pie data={filterData} height={160} width={200} />
+     </div>
+    <div className="seg-date">
+      <div id="seg-date-start">
+       <DatePicker  selected={startDate} onChange={dateStartHandle} dateFormat="dd/MM/yyyy" />
+       </div>
+       <div id="seg-date-end">
+      <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" />
+      </div>
    </div>
- )
- }
+   </div>
+  )
+}
+
 export default SegQTD;

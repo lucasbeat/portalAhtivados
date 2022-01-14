@@ -9,7 +9,6 @@ import StarIcon from '@material-ui/icons/Star';
 import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 
-import logo from './img/logo1.png';
 import logo2 from './img/logo2.jpg';
 
 function sideBar() {
@@ -37,7 +36,7 @@ function sideBar() {
             <div id='menu-nav' className='menu-nav-class'>
                 <Link to='/' className='menu-nav-item-painel' >
                 <i className='icn-painel-icon'>{icons.painel}</i>
-                <span className='painel-span'>Pagina Inicial</span>
+                <span className='painel-span'>Página Inicial</span>
                 </Link>
 
                 <Link to='/profile' className='menu-nav-item-profile'>
@@ -57,7 +56,7 @@ function sideBar() {
 
                 <Link to='/analytics'  className='menu-nav-item-analytics'>
                 <i className='icn-painel-icon'>{icons.analytics}</i>
-                <span className='painel-span'>Realatórios</span>
+                <span className='painel-span'>Relatórios</span>
                 </Link>
             </div>
                 <footer></footer>

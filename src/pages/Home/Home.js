@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header';
 function Home() {
     return (
         <>
-        <Header title="Pagina inicial"/>
+        <Header title="Página inicial"/>
         <div className="square"></div>
         </>
     )
