@@ -12,7 +12,84 @@
 
     box-shadow: 0 0 1.5em #C2C2CD;
 
+    border: 1px solid red;
 }
+
+.square-analytics-agQtd {
+    height: 430px;
+    width: 90%;
+    margin: 0.3rem;
+    transition: all 0.2s ease;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+
+    box-shadow: 0 0 1.5em #C2C2CD;
+
+    border: 1px solid red;
+}
+
+.square-analytics-agQtd .square-title {
+    color: #2A2A33;
+    width: 100%;
+    height: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 0.5em #C2C2CD;
+}
+
+.square-analytics-agQtd:hover {
+    transform: scale(1.01);
+}
+
+.square-analytics-agMedia {
+    height: 350px;
+    width: 90%;
+    margin: 0.3rem;
+    transition: all 0.2s ease;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+
+    box-shadow: 0 0 1.5em #C2C2CD;
+
+    border: 1px solid red;
+}
+
+.square-analytics-agMedia .square-title {
+    color: #2A2A33;
+    width: 100%;
+    height: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 0.5em #C2C2CD;
+}
+
+.square-analytics-agMedia:hover {
+    transform: scale(1.01);
+}
+
+.square-analytics-media-seg {
+  
+    height: 550px;
+    width: 570px;
+    margin: 0.3rem;
+    transition: all 0.2s ease;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+
+    box-shadow: 0 0 1.5em #C2C2CD;
+}
+
 
 .square-analytics .square-title {
     color: #2A2A33;
@@ -24,8 +101,10 @@
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 0 0.3em #C2C2CD;
+    box-shadow: 0 0 0.5em #C2C2CD;
 }
+
+
 
 .square-analytics:hover {
     transform: scale(1.01);
