@@ -1,0 +1,15 @@
+.square {
+    height: 400px;
+    width: 400px;
+    margin: 0.3rem;
+    transition: all 0.2s ease;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+
+    box-shadow: 0 0 1.5em #C2C2CD;
+}
+
+.square:hover {
+    transform: scale(1.1);
+}

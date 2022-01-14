@@ -98,7 +98,7 @@ const SegQTD = () => {
        <DatePicker  selected={startDate} onChange={dateStartHandle} dateFormat="dd/MM/yyyy" locale={br} />
        </div>
        <div id="seg-date-end">
-      <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" />
+      <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" locale={br} />
       </div>
    </div>
    </div>
