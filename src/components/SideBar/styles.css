@@ -47,7 +47,7 @@
     left: 8px;
     position: absolute;
     right: 8px;
-    top: 40px;
+    top: 15px;
     display: block;
     width: 105px;
     height: 60px;
@@ -55,16 +55,19 @@
 
 #aside #menu-aside .menu-app {
     align-items: center;
-    background-color: #2a2a33;
+    background-color: #1199DD;
     color: #f9f9f9;
     display: flex;
     flex-direction: column;
     font-size: .6875rem;
-    height: 75px;
+    height: 40px;
     justify-content: center;
     min-height: 75px;
     position: relative;
-    
+}
+
+#aside #menu-aside .menu-app .span-frase {
+    font-size: 10px;
 }
 
 #aside #menu-nav .painel-span {

@@ -3,16 +3,18 @@ import {  Link } from 'react-router-dom';
 
 import './styles.css';
 
+import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import HomeIcon from '@material-ui/icons/Home'
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import StarIcon from '@material-ui/icons/Star';
 import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 
-import logo2 from './img/logo2.jpg';
+import logo from './img/logo1.png';
 
 function sideBar() {
     const icons = {
+        people: <PeopleAltIcon />,
         painel: <HomeIcon />,
         profile: <AccountCircleIcon />,
         ranking: <StarIcon />,
@@ -24,12 +26,12 @@ function sideBar() {
         <aside id='aside'>
             <div id='menu-aside'>
             <header className='menu-header'>
-                <img className='company-logo' src={logo2} alt='logo'></img>
+                <img className='company-logo' src={logo} alt='logo'></img>
             </header>
 
             <div className='menu-app'>
-                <i className='pc-icon'>{}</i>
-                <span></span>
+                <i className='people-icon'>{icons.people}</i>
+                <span className='span-frase'>Seja bem Vindo(a)</span>
                 <div className='shadow'></div>
             </div>
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import br from 'date-fns/locale/pt-BR'
 
 import api from '../../../services/api';
 import  DatePicker  from 'react-datepicker';
@@ -94,7 +95,7 @@ const SegQTD = () => {
      </div>
     <div className="seg-date">
       <div id="seg-date-start">
-       <DatePicker  selected={startDate} onChange={dateStartHandle} dateFormat="dd/MM/yyyy" />
+       <DatePicker  selected={startDate} onChange={dateStartHandle} dateFormat="dd/MM/yyyy" locale={br} />
        </div>
        <div id="seg-date-end">
       <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" />
