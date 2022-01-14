@@ -20,10 +20,10 @@ function App() {
       <SideBar />
       </div>
       <div className='content'>
-        <Header />
+        
         <Routes>
           <Route exact path='/' element={<Home />} ></Route>
-          <Route exact path='/profile' element={<Profile />} ></Route>
+          <Route exact path='/profile' element={<Profile  />} ></Route>
           <Route exact path='/ranking' element={<Ranking />} ></Route>
           <Route exact path='/challenges' element={<Challenges />} ></Route>
           <Route exact path='/analytics' element={<Analytics />} ></Route>

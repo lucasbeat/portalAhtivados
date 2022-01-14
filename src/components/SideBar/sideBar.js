@@ -10,6 +10,7 @@ import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 
 import logo from './img/logo1.png';
+import logo2 from './img/logo2.jpg';
 
 function sideBar() {
     const icons = {
@@ -24,7 +25,7 @@ function sideBar() {
         <aside id='aside'>
             <div id='menu-aside'>
             <header className='menu-header'>
-                <img className='company-logo' src={logo} alt='logo'></img>
+                <img className='company-logo' src={logo2} alt='logo'></img>
             </header>
 
             <div className='menu-app'>

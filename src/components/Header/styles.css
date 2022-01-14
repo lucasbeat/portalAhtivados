@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 
 .header-square {
-    background: var(--ahg-gray-lighten5);
     width: 100vw;
     min-width: auto;
     height: 115px;
@@ -18,7 +17,7 @@
     font-size: 28px;
 
     font-family: 'Fira Sans', sans-serif;
-    color: #58586b;
+    color: #2A2A33;
     opacity: 1;
 }
   

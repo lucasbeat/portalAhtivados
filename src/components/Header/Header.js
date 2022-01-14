@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles.css'
 
-function Header() {
-    return (
+function Header(props) {
+    const tileChange = props.title;
+
+   return (
         <div className="header-square">
-            <h2 id='page-name'>Pagina Inicial</h2>
+            <h2 id='page-name'>{tileChange}</h2>
         </div>
     )
 }

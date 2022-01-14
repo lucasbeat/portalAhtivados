@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+.square-analytics {
+  
+    height: 550px;
+    width: 550px;
+    margin: 0.3rem;
+    transition: all 0.2s ease;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+
+.square-analytics .square-title {
+    color: #2A2A33;
+    width: 100%;
+    height: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid red;
+}
+
+
+
+.square-analytics:hover {
+    transform: scale(1.01);
+}
+  

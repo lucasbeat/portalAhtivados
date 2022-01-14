@@ -1,9 +1,14 @@
 import React from 'react'
 import '../../App.css'
 
+import Header from '../../components/Header/Header';
+
 function Profile() {
     return (
-         <div className="square2"></div>
+        <>
+        <Header title="Perfil"/>
+        <div className="square"></div>
+        </>
     )
 }
 

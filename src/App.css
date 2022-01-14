@@ -30,22 +30,4 @@
   
 }
 
-.square {
-  box-shadow: 5px 5px 20px aqua;
-  height: 200px;
-  width: 200px;
-  margin: 0.3rem;
-  transition: all 0.2s ease;
-  color: white;
-  background-color: white;
-}
 
-.square2 {
-  box-shadow: 5px 5px 20px aqua;
-  height: 200px;
-  width: 200px;
-  margin: 0.3rem;
-  transition: all 0.2s ease;
-  color: white;
-  background-color: white;
-}
