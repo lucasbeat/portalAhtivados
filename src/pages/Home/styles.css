@@ -1,15 +1,91 @@
-.square {
-    height: 400px;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+.square-link-processos {
+    height: 200px;
     width: 400px;
     margin: 0.3rem;
     transition: all 0.2s ease;
     color: #f9f9f9;
     background-color: #f9f9f9;
-    margin-top: 40px;
+    margin-bottom: 310px;
 
-    box-shadow: 0 0 1.5em #C2C2CD;
+    box-shadow: 0 0 0.5em #c3ecff;
 }
 
-.square:hover {
+.square-link-processos:hover {
     transform: scale(1.1);
 }
+
+.square-link-processos .title-processos {
+    color: #161652;
+    background-color: #e9f8ff;
+    width: 100%;
+    height: 27px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 0.5em #c3ecff;
+}
+
+.square-link-processos .img-processos {
+    height: 100%;
+    width: 100%;
+
+    cursor: pointer;
+    box-shadow: 0 0 0.5em #c3ecff;
+}
+
+
+
+
+.square-link-ata {
+    height: 200px;
+    width: 700px;
+    margin: 0.2rem;
+    transition: all 0.2s ease;
+    color: #0f54a3;
+    background-color: #0f54a3;
+    margin-bottom: 370px;
+
+    box-shadow: 0 0 0.2em #0f54a3;
+}
+
+.square-link-ata:hover {
+    transform: scale(1.1);
+}
+
+.square-link-ata .title-processos {
+    color:  #F9F9F9;
+    background-color: #0f54a3;
+    width: 100%;
+    height: 27px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 0.2em #0f54a3;
+}
+
+.square-link-ata .img-ata {
+    height: 100%;
+    width: 100%;
+
+    cursor: pointer;
+    box-shadow: 0 0 0.2em #0f54a3;
+}
+
+
+

@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import '../styles.css';
 
 import api from '../../../services/api';
-import {  Bar } from 'react-chartjs-2';
+
+import  { Bar } from 'react-chartjs-2';
 
 import colors from '../../../utils/colors';
 
@@ -58,7 +59,7 @@ function Home() {
   
     return (
       <div className='agent-qtd'>
-      <Bar  height={60} width={200}data={ticketsQTD} />
+      <Bar type='bar' height={60} width={200}data={ticketsQTD} />
     </div>
   )
 }

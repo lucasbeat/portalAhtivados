@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react';
 import '../styles.css';
 
 import api from '../../../services/api';
-import {  Bar} from 'react-chartjs-2';
+import { Bar ,
+  Chart as ChartJS,
+  defaults
+} from 'react-chartjs-2';
 
 import colors from '../../../utils/colors';
 
@@ -34,7 +37,6 @@ function AgentMedia() {
   
         setlistSegmentacao({
           labels: listName,
-          options: {cutoutPercentage: 80},
           datasets: [
             {
               label: 'MEDIA POR AGENTE',
@@ -71,7 +73,7 @@ function AgentMedia() {
 
     return (
       <div className='agent-media'>
-      <Bar  height={70} width={300} data={listSatisfacao} /> 
+      <Bar type='bar' height={70} width={300} data={listSatisfacao} /> 
     </div>
   )
 }

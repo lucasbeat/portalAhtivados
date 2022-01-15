@@ -72,7 +72,6 @@
 }
 
 .square-analytics-media-seg {
-  
     height: 550px;
     width: 570px;
     margin: 0.3rem;
@@ -82,6 +81,40 @@
     margin-top: 40px;
 
     box-shadow: 0 0 1.5em #C2C2CD;
+}
+
+
+.square-segpercent {
+    height: 550px;
+    width: 570px;
+    margin: 0.3rem;
+    transition: all 0.2s ease;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+
+    box-shadow: 0 0 1.5em #C2C2CD;
+}
+
+.segpercent-date {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 8px;
+
+}
+
+.square-segpercent .square-title {
+    color: #2A2A33;
+    width: 100%;
+    height: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 0.5em #C2C2CD;
 }
 
 
@@ -98,7 +131,10 @@
     box-shadow: 0 0 0.5em #C2C2CD;
 }
 
-
+.segpercent .segpercent-chart {
+    height: 80%;
+    width: 100%;
+}
 
 .square-analytics:hover {
     transform: scale(1.01);
@@ -124,7 +160,6 @@
     width: 100%;
     margin-bottom: 10px;
     justify-content: space-evenly;   
-    
 }
 
 .segqtd-main .seg-date #seg-date-start {
@@ -134,4 +169,5 @@
 .segqtd-main .seg-date #seg-date-end {
     box-shadow: 0 0 1em #C2C2CD;
 }
-  
+
+

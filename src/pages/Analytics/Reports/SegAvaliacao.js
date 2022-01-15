@@ -3,7 +3,11 @@ import '../styles.css';
 
 
 import api from '../../../services/api';
-import { Doughnut } from 'react-chartjs-2';
+import  { Doughnut,
+  Chart as ChartJS,
+  defaults
+} from 'react-chartjs-2';
+
 
 import colors from '../../../utils/colors';
 
@@ -71,7 +75,7 @@ function SegAvaliacao() {
 
     return (
       <div className='seg-avaliacao'>
-      <Doughnut  height={160} width={200} data={listAvaliacaoSeg} />
+      <Doughnut type='doughnut'  height={160} width={200} data={listAvaliacaoSeg} />
     </div>
   )
 }

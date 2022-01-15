@@ -11,6 +11,7 @@ import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 
 import logo from './img/logo1.png';
+import logo2 from './img/logo2.jpg';
 
 function sideBar() {
     const icons = {
@@ -31,7 +32,7 @@ function sideBar() {
 
             <div className='menu-app'>
                 <i className='people-icon'>{icons.people}</i>
-                <span className='span-frase'>Seja bem Vindo(a)</span>
+                <span className='span-frase'>Seja Bem Vindo(a)</span>
                 <div className='shadow'></div>
             </div>
 

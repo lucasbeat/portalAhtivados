@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import br from 'date-fns/locale/pt-BR'
 
-import api from '../../../services/api';
-import  DatePicker  from 'react-datepicker';
-import { Pie } from 'react-chartjs-2';
-import moment from "moment";
-
 import "react-datepicker/dist/react-datepicker.css";
 import '../styles.css';
 
-const SegQTD = () => {
+import { Doughnut } from "react-chartjs-2";
+
+import api from '../../../services/api';
+import  DatePicker  from 'react-datepicker';
+
+import moment from "moment";
+
+const SegPercentageTickets= () => {
   const [filterData, setFilterData] = useState([]);
   const [startDate, setStartDate] = useState(new Date("01/04/2021"));
   const [endDate, setEndDate] = useState(new Date("01/04/2021"));
@@ -37,10 +39,10 @@ const SegQTD = () => {
   }
 
   const filtro = () => {
-      const labels = []
-      const dataPoints = []
+      const labels = [];
+      const dataPoints = [];
     
-      api.post('filter', data).then(res => {
+      api.post('filterPercent', data).then(res => {
         
       labels.push(Object.keys(res.data));
       dataPoints.push(Object.values(res.data));
@@ -67,9 +69,12 @@ const SegQTD = () => {
               'rgba(153, 102, 255, 1)',
               'rgba(255, 159, 64, 1)',
             ],
-            borderWidth: 1,
+            borderWidth: 1.5,
           },
         ],
+        tooltips: {
+          enabled: false
+        }
       })
       }
     ).catch(err => {
@@ -88,14 +93,15 @@ const SegQTD = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [endDate]);
 
+
  return (
-   <div className="segqtd-main">
-     <div className="segqtd-chart">
-     <Pie data={filterData} height={160} width={200} />
+   <div className="segpercent">
+     <div className="segpercent-chart">
+     <Doughnut data={filterData} height={160} width={200} />
      </div>
-    <div className="seg-date">
+    <div className="segpercent-date">
       <div id="seg-date-start">
-       <DatePicker  options={{ render: 'percent'}}  selected={startDate} onChange={dateStartHandle} dateFormat="dd/MM/yyyy" locale={br} />
+       <DatePicker  selected={startDate} onChange={dateStartHandle}  dateFormat="dd/MM/yyyy" locale={br} />
        </div>
        <div id="seg-date-end">
       <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" locale={br} />
@@ -105,4 +111,5 @@ const SegQTD = () => {
   )
 }
 
-export default SegQTD;
+
+export default SegPercentageTickets;
