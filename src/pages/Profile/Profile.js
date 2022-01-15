@@ -1,13 +1,17 @@
 import React from 'react'
-import '../../App.css'
+import './styles.css';
 
 import Header from '../../components/Header/Header';
+import construcao from './img/construcao.png'
+
 
 function Profile() {
     return (
         <>
         <Header title="Perfil"/>
-        <div className="square"></div>
+        <div className="square">
+            <img className='page-construcao' src={construcao} alt='construcao'></img>
+        </div>
         </>
     )
 }
