@@ -100,10 +100,12 @@ const SegPercentageTickets= () => {
      <Doughnut data={filterData} height={160} width={200} />
      </div>
     <div className="segpercent-date">
-      <div id="seg-date-start">
+      <div className="segpercent-date-start">
+      <h1>Data inicial:</h1>
        <DatePicker  selected={startDate} onChange={dateStartHandle}  dateFormat="dd/MM/yyyy" locale={br} />
        </div>
-       <div id="seg-date-end">
+       <div className="segpercent-date-end">
+       <h1>Data final:</h1>
       <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" locale={br} />
       </div>
    </div>

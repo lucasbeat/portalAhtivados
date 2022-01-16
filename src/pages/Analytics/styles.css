@@ -99,10 +99,49 @@
 .segpercent-date {
     display: flex;
     justify-content: space-evenly;
-
     margin-top: 8px;
-
 }
+
+.segpercent .segpercent-chart {
+    height: 80%;
+    width: 100%;
+}
+
+
+.segpercent-date .segpercent-date-start {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: #F9F9F9;
+    align-items: center;
+}
+
+.segpercent-date .segpercent-date-start h1 {
+    width: 120px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: #2A2A33;
+    background-color:  #F9F9F9;
+}
+
+.segpercent-date .segpercent-date-end {
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+    background-color: #F9F9F9;
+    align-items: center;
+}
+.segpercent-date .segpercent-date-end h1 {
+    width: 120px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: #2A2A33;
+    background-color:  #F9F9F9;
+}
+
+
 
 .square-segpercent .square-title {
     color: #2A2A33;
@@ -131,10 +170,7 @@
     box-shadow: 0 0 0.5em #C2C2CD;
 }
 
-.segpercent .segpercent-chart {
-    height: 80%;
-    width: 100%;
-}
+
 
 .square-analytics:hover {
     transform: scale(1.01);
@@ -157,17 +193,43 @@
 .segqtd-main .seg-date {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 10px;
-    justify-content: space-evenly;   
+    background-color:  #F9F9F9;
 }
 
-.segqtd-main .seg-date #seg-date-start {
-    box-shadow: 0 0 1em #C2C2CD;
+.segqtd-main .seg-date .seg-date-start h1 {
+    width: 120px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: #2A2A33;
+    background-color:  #F9F9F9;
 }
 
-.segqtd-main .seg-date #seg-date-end {
-    box-shadow: 0 0 1em #C2C2CD;
+.segqtd-main .seg-date .seg-date-start {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: #F9F9F9;
+    align-items: center;
 }
 
+.segqtd-main .seg-date .seg-date-end {
+    display: flex;
+    flex-direction: row;
+    width: 42%;
+    background-color: #F9F9F9;
+    align-items: center;
+}
+
+.segqtd-main .seg-date .seg-date-end h1 {
+    width: 103px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: #2A2A33;
+    background-color:  #F9F9F9;
+}
 

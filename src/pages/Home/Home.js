@@ -10,6 +10,7 @@ function Home() {
     return (
         <>
         <Header title="Página inicial"/>
+        <div id='mainpage-info'> 
         <div className="square-link-processos">
             <a style={{'textDecoration': 'none'}} target="_blank" href="https://www.google.com" rel="noreferrer">
             <h1 className='title-processos'>Processo dos ahtivados</h1>
@@ -28,6 +29,7 @@ function Home() {
                 <h1 className='title-boletim'>Boletim semanal</h1>
                 <img className='img-boletim' src={imgBoletim} alt='img-boletim' ></img>
             </a>
+        </div>
         </div>
         </>
     )

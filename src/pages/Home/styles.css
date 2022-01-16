@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 
+#mainpage-info {
+    display: flex;
+    
+    margin-bottom: 25%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .square-link-processos {
-    height: 32%;
-    width: 40%;
+    height: 28%;
+    width: 32%;
     margin: 0.5rem;
     transition: all 0.2s ease;
     color: #f9f9f9;
@@ -40,11 +50,9 @@
 }
 
 
-
-
 .square-link-ata {
-    height: 200px;
-    width: 700px;
+    height: 180px;
+    width: 600px;
     margin: 0.5rem;
     transition: all 0.2s ease;
     color: #0f54a3;
@@ -86,16 +94,14 @@
 
 
 .square-link-boletim {
-    height: 200px;
-    width: 34%;
+    height: 180px;
+    width: 33%;
     margin: 0.4rem;
     transition: all 0.2s ease;
     color: #f9f9f9;
     background-color: #f9f9f9;
-    margin-right: 62%;
-
+    margin-right: 56%;
     margin-bottom: 65px;
-    
 
     box-shadow: 0 0 0.5em #7de78e;
 }
@@ -119,13 +125,9 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 17px;
     display: flex;
-    align-items: center;
     justify-content: center;
-
     text-decoration: none;
-
     cursor: pointer;
-
     box-shadow: 0 0 0.2em #7de78e;
 }
 

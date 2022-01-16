@@ -94,10 +94,12 @@ const SegQTD = () => {
      <Pie data={filterData} height={160} width={200} />
      </div>
     <div className="seg-date">
-      <div id="seg-date-start">
+      <div className="seg-date-start">
+      <h1>Data inicial:</h1>
        <DatePicker  options={{ render: 'percent'}}  selected={startDate} onChange={dateStartHandle} dateFormat="dd/MM/yyyy" locale={br} />
        </div>
-       <div id="seg-date-end">
+       <div className="seg-date-end">
+       <h1>Data final:</h1>
       <DatePicker  selected={endDate} onChange={dateEndHandle} dateFormat="dd/MM/yyyy" locale={br} />
       </div>
    </div>

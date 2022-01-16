@@ -39,9 +39,12 @@ function AgentMedia() {
           labels: listName,
           datasets: [
             {
-              label: 'MEDIA POR AGENTE',
+              label: '',
               data: listAmount,
               options: {
+                legend: {onClick: function (e) {
+                  e.stopPropagation();
+              }},
                 layout: {
                     padding: {
                         left: 100,
@@ -71,9 +74,13 @@ function AgentMedia() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+   const options = {
+    legend: { onClick: null}
+   }
+
     return (
       <div className='agent-media'>
-      <Bar type='bar' height={70} width={300} data={listSatisfacao} /> 
+      <Bar type='bar' height={70} width={300} options={options} data={listSatisfacao} /> 
     </div>
   )
 }
