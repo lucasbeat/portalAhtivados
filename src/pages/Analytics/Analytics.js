@@ -12,7 +12,9 @@ import AgentMedia from './Reports/AgentMedia';
 function Analytics() {
     return (
         <>
-        <Header title="Indicadores"/>
+        <Header  title="Indicadores" />  
+        <div className='squares'>
+          <button  className='button-indicadores'>Indicadores avançados</button>
         <div className="square-analytics">
             <h1 className="square-title">Quantidade de tickets por segmento</h1>
             <SegQTD />
@@ -33,6 +35,7 @@ function Analytics() {
         <h1 className='square-title'>Media CSAT por agente</h1>
             <AgentMedia />
         </div>
+        </div> 
         </>
     )
 }
