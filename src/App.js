@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import "chartjs-plugin-datalabels";
+
 import './App.css';
 
 import SideBar from './components/SideBar/sideBar';

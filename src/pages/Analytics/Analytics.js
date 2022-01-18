@@ -12,7 +12,7 @@ import AgentMedia from './Reports/AgentMedia';
 function Analytics() {
     return (
         <>
-        <Header title="Relatórios"/>
+        <Header title="Indicadores"/>
         <div className="square-analytics">
             <h1 className="square-title">Quantidade de tickets por segmento</h1>
             <SegQTD />

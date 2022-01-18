@@ -3,13 +3,11 @@ import '../styles.css';
 
 
 import api from '../../../services/api';
-import  { Doughnut,
-  Chart as ChartJS,
-  defaults
-} from 'react-chartjs-2';
-
+import  { Doughnut } from 'react-chartjs-2';
 
 import colors from '../../../utils/colors';
+
+import "chartjs-plugin-datalabels";
 
 function SegAvaliacao() {
     const [listAvaliacaoSeg, setlistAvaliacaoSeg] = useState([]);
@@ -73,9 +71,17 @@ function SegAvaliacao() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
+    let options = {
+      plugins: {
+        datalabels: {
+          color: "Black"
+        }
+      }
+    };
+
     return (
       <div className='seg-avaliacao'>
-      <Doughnut type='doughnut'  height={160} width={200} data={listAvaliacaoSeg} />
+      <Doughnut type='doughnut' options={options}  height={160} width={200} data={listAvaliacaoSeg} />
     </div>
   )
 }

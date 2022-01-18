@@ -12,7 +12,7 @@
 
 .square-link-processos {
     height: 28%;
-    width: 32%;
+    width: 36%;
     margin: 0.5rem;
     transition: all 0.2s ease;
     color: #f9f9f9;
@@ -52,14 +52,14 @@
 
 .square-link-ata {
     height: 180px;
-    width: 600px;
+    width: 36%;
     margin: 0.5rem;
     transition: all 0.2s ease;
     color: #0f54a3;
     background-color: #0f54a3;
     
 
-    box-shadow: 0 0 0.2em #0f54a3;
+    box-shadow: 0 0 0.2em #2a2a33;
 }
 
 .square-link-ata:hover {
@@ -78,10 +78,8 @@
     justify-content: center;
 
     text-decoration: none;
-
     cursor: pointer;
-
-    box-shadow: 0 0 0.2em #0f54a3;
+    box-shadow: 0 0 0.2em #2a2a33;
 }
 
 .square-link-ata .img-ata {
@@ -89,18 +87,18 @@
     width: 100%;
 
     cursor: pointer;
-    box-shadow: 0 0 0.2em #0f54a3;
+    box-shadow: 0 0 0.2em #2a2a33;
 }
 
 
 .square-link-boletim {
     height: 180px;
-    width: 33%;
+    width: 36%;
     margin: 0.4rem;
     transition: all 0.2s ease;
     color: #f9f9f9;
     background-color: #f9f9f9;
-    margin-right: 56%;
+    margin-right: 50%;
     margin-bottom: 65px;
 
     box-shadow: 0 0 0.5em #7de78e;

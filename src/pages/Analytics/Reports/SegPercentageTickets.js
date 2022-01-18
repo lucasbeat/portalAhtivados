@@ -11,6 +11,9 @@ import  DatePicker  from 'react-datepicker';
 
 import moment from "moment";
 
+import "chartjs-plugin-datalabels";
+
+
 const SegPercentageTickets= () => {
   const [filterData, setFilterData] = useState([]);
   const [startDate, setStartDate] = useState(new Date("01/04/2021"));
@@ -42,7 +45,7 @@ const SegPercentageTickets= () => {
       const labels = [];
       const dataPoints = [];
     
-      api.post('filterPercent', data).then(res => {
+      api.post('filter', data).then(res => {
         
       labels.push(Object.keys(res.data));
       dataPoints.push(Object.values(res.data));
@@ -93,11 +96,30 @@ const SegPercentageTickets= () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [endDate]);
 
+  let options = {
+    plugins: {
+      datalabels: {
+        formatter: (value, ctx) => {
+          let datasets = ctx.chart.data.datasets;
+  
+          if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+            let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+            let percentage = Math.round((value / sum) * 100) + "%";
+            return percentage;
+          } else {
+            console.log('Erro ao fazer o calculo');
+          }
+        },
+        color: "Black"
+      }
+    }
+  };
+
 
  return (
    <div className="segpercent">
      <div className="segpercent-chart">
-     <Doughnut data={filterData} height={160} width={200} />
+     <Doughnut data={filterData} options={options}  height={160} width={200} />
      </div>
     <div className="segpercent-date">
       <div className="segpercent-date-start">

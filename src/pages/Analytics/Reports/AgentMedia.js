@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles.css';
 
 import api from '../../../services/api';
-import { Bar ,
-  Chart as ChartJS,
-  defaults
-} from 'react-chartjs-2';
 
+
+import { Bar } from 'react-chartjs-2';
 import colors from '../../../utils/colors';
+
+import "chartjs-plugin-datalabels";
 
 function AgentMedia() {
     const [listSatisfacao, setlistSegmentacao] = useState([]);
@@ -41,19 +41,6 @@ function AgentMedia() {
             {
               label: '',
               data: listAmount,
-              options: {
-                legend: {onClick: function (e) {
-                  e.stopPropagation();
-              }},
-                layout: {
-                    padding: {
-                        left: 100,
-                        right: 0,
-                        top: 0,
-                        bottom: 0
-                    }
-                }
-            },
               backgroundColor: backgroundColor,
               borderColor: borderColor,
               borderWidth: 1,
@@ -74,13 +61,11 @@ function AgentMedia() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-   const options = {
-    legend: { onClick: null}
-   }
+
 
     return (
       <div className='agent-media'>
-      <Bar type='bar' height={70} width={300} options={options} data={listSatisfacao} /> 
+      <Bar   type='bar'  height={70} width={300} data={listSatisfacao} /> 
     </div>
   )
 }

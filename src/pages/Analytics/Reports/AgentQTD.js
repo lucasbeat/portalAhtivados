@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles.css';
 
 import api from '../../../services/api';
@@ -6,6 +6,9 @@ import api from '../../../services/api';
 import  { Bar } from 'react-chartjs-2';
 
 import colors from '../../../utils/colors';
+
+import "chartjs-plugin-datalabels";
+
 
 function Home() {
     const [ticketsQTD, setticketsQTD] = useState([]);
@@ -56,10 +59,19 @@ function Home() {
       chartTickets()
        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
+
+
+    let options = {
+      plugins: {
+        datalabels: {
+          color: "Black"
+        }
+      }
+    };
   
     return (
       <div className='agent-qtd'>
-      <Bar type='bar' height={60} width={200}data={ticketsQTD} />
+      <Bar type='bar' options={options} height={60} width={200} data={ticketsQTD} />
     </div>
   )
 }

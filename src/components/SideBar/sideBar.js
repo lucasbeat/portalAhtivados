@@ -11,7 +11,6 @@ import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 
 import logo from './img/logo1.png';
-import logo2 from './img/logo2.jpg';
 
 function sideBar() {
     const icons = {
@@ -59,7 +58,7 @@ function sideBar() {
 
                 <Link to='/analytics'  className='menu-nav-item-analytics'>
                 <i className='icn-painel-icon'>{icons.analytics}</i>
-                <span className='painel-span'>Relatórios</span>
+                <span className='painel-span'>Indicadores</span>
                 </Link>
             </div>
                 <footer></footer>

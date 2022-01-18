@@ -9,6 +9,8 @@ import moment from "moment";
 import "react-datepicker/dist/react-datepicker.css";
 import '../styles.css';
 
+import "chartjs-plugin-datalabels";
+
 const SegQTD = () => {
   const [filterData, setFilterData] = useState([]);
   const [startDate, setStartDate] = useState(new Date("01/04/2021"));
@@ -88,10 +90,21 @@ const SegQTD = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [endDate]);
 
+
+  let options = {
+    plugins: {
+      datalabels: {
+        color: "Black", 
+        
+      }
+    }
+  };
+
+
  return (
    <div className="segqtd-main">
      <div className="segqtd-chart">
-     <Pie data={filterData} height={160} width={200} />
+     <Pie data={filterData} options={options}  height={160} width={200} />
      </div>
     <div className="seg-date">
       <div className="seg-date-start">
