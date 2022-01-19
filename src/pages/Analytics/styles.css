@@ -243,7 +243,9 @@
     background-color:  #F9F9F9;
 }
 
-
+.advanced-analytics {
+    margin-left: 62%;
+}
 
  .button-indicadores {
     height: 40px;
@@ -254,6 +256,8 @@
     cursor: pointer;
     font-family: 'Fira Sans', sans-serif;
     border: 2px solid #1199DD;
+
+    border-radius: 5px;
 }
 
 .button-indicadores:hover {

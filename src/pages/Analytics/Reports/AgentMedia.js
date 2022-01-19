@@ -65,7 +65,7 @@ function AgentMedia() {
 
     return (
       <div className='agent-media'>
-      <Bar   type='bar'  height={70} width={300} data={listSatisfacao} /> 
+      <Bar type='bar' height={70} width={300} data={listSatisfacao} /> 
     </div>
   )
 }

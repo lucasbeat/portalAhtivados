@@ -2,11 +2,11 @@ import React from 'react'
 import './styles.css'
 
 function Header(props) {
-    const tileChange = props.title;
+    const titleChange = props.title;
 
    return (
         <div className="header-square">
-            <h2 id='page-name'>{tileChange}</h2>
+            <h2 id='page-name'>{titleChange}</h2>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import { Link } from 'react-router-dom'
 
 import Header from '../../components/Header/Header';
 import SegQTD from './Reports/SegQTD';
@@ -14,7 +15,9 @@ function Analytics() {
         <>
         <Header  title="Indicadores" />  
         <div className='squares'>
+        <Link to='/advancedAnalytics' className='advanced-analytics' >
           <button  className='button-indicadores'>Indicadores avançados</button>
+          </Link>
         <div className="square-analytics">
             <h1 className="square-title">Quantidade de tickets por segmento</h1>
             <SegQTD />

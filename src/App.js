@@ -12,6 +12,7 @@ import Profile from './pages/Profile/Profile';
 import Ranking from './pages/Ranking/Ranking';
 import Challenges from './pages/Challenges/Challenges';
 import Analytics from './pages/Analytics/Analytics';
+import AnalyticsAdvanced from './pages/Analytics/AnalyticsAdvanced';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/ranking' element={<Ranking />} ></Route>
           <Route exact path='/challenges' element={<Challenges />} ></Route>
           <Route exact path='/analytics' element={<Analytics />} ></Route>
+          <Route exact path='/advancedAnalytics' element={<AnalyticsAdvanced />}></Route>
         </Routes>
       </div>
     </div>
