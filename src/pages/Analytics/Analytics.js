@@ -1,8 +1,11 @@
 import React from 'react';
 import './styles.css';
+import '../../App.css';
 import { Link } from 'react-router-dom'
 
 import Header from '../../components/Header/Header';
+import SideBar from '../../components/SideBar/sideBar';
+
 import SegQTD from './Reports/SegQTD';
 import SegPercentageTickets from './Reports/SegPercentageTickets';
 import SegAvaliacao from './Reports/SegAvaliacao';
@@ -13,6 +16,8 @@ import AgentMedia from './Reports/AgentMedia';
 function Analytics() {
     return (
         <>
+        <SideBar />
+        <div className='content'>
         <Header  title="Indicadores" />  
         <div className='squares'>
         <Link to='/advancedAnalytics' className='advanced-analytics' >
@@ -39,6 +44,7 @@ function Analytics() {
             <AgentMedia />
         </div>
         </div> 
+        </div>
         </>
     )
 }

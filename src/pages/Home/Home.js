@@ -1,7 +1,10 @@
 import React from 'react'
+import '../../App.css'
 import './styles.css'
 
+import SideBar from '../../components/SideBar/sideBar';
 import Header from '../../components/Header/Header';
+
 import imgProcessos from './img/processos22.png';
 import imgAta from './img/imgAta.png';
 import imgBoletim from './img/boletim2.jpg';
@@ -9,6 +12,8 @@ import imgBoletim from './img/boletim2.jpg';
 function Home() {
     return (
         <>
+         <SideBar />
+        <div className='content'>
         <Header title="Página inicial"/>
         <div id='mainpage-info'> 
         <div className="square-link-processos">
@@ -29,6 +34,7 @@ function Home() {
                 <h1 className='title-boletim'>Boletim semanal</h1>
                 <img className='img-boletim' src={imgBoletim} alt='img-boletim' ></img>
             </a>
+        </div>
         </div>
         </div>
         </>

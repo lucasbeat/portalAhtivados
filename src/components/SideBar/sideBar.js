@@ -36,7 +36,7 @@ function sideBar() {
             </div>
 
             <div id='menu-nav' className='menu-nav-class'>
-                <Link to='/' className='menu-nav-item-painel' >
+                <Link to='/home' className='menu-nav-item-painel' >
                 <i className='icn-painel-icon'>{icons.painel}</i>
                 <span className='painel-span'>Página Inicial</span>
                 </Link>
