@@ -53,6 +53,8 @@
     height: 60px;
 }
 
+
+
 #aside #menu-aside .menu-app {
     align-items: center;
     background-color: #1199DD;
@@ -68,6 +70,21 @@
 
 #aside #menu-aside .menu-app .span-frase {
     font-size: 10px;
+}
+
+#aside #menu-aside .menu-app::after {
+    background-color: inherit;
+    border-bottom-right-radius: 1px;
+    bottom: -6px;
+    content: "";
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    
+
+    transform: rotate(
+    45deg
+);
 }
 
 #aside #menu-nav .painel-span {
@@ -101,7 +118,7 @@
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-painel:hover{
-    transform: scale(1.15);
+    transform: scale(1.06);
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-profile {
@@ -117,7 +134,7 @@
 
 
 #aside #menu-aside #menu-nav .menu-nav-item-profile:hover {
-    transform: scale(1.15);
+    transform: scale(1.06);
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-ranking {
@@ -131,7 +148,7 @@
     color: #2a2a33;
 }
 #aside #menu-aside #menu-nav .menu-nav-item-ranking:hover {
-     transform: scale(1.1);
+    transform: scale(1.06);
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-challenges {
@@ -146,7 +163,7 @@
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-challenges:hover {
-    transform: scale(1.15);
+    transform: scale(1.06);
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-analytics{
@@ -161,6 +178,6 @@
 }
 
 #aside #menu-aside #menu-nav .menu-nav-item-analytics:hover {
-    transform: scale(1.15);
+    transform: scale(1.06);
 }
 

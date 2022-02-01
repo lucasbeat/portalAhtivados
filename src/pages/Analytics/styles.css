@@ -180,8 +180,6 @@
     box-shadow: 0 0 0.5em #C2C2CD;
 }
 
-
-
 .square-analytics:hover {
     transform: scale(1.01);
 }
@@ -244,13 +242,12 @@
 }
 
 .advanced-analytics {
-    margin-left: 62%;
+    margin-left: 80%;
 }
 
  .button-indicadores {
     height: 40px;
     width: 150px;
-    margin-left: 85%;
     background-color: #1199DD;
     color:  #F9F9F9;
     cursor: pointer;
@@ -261,5 +258,5 @@
 }
 
 .button-indicadores:hover {
-    transform: scale(1.1)
+    transform: scale(1.03)
 }

@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+    height: 70%;
+    width: 100%;
+    background-color: #3A3A45;
+
+    
+}
+
+.footer .footer-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+    height: 30%;
+    width: 30%;
+    cursor: pointer;
+}
+

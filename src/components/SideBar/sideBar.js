@@ -2,6 +2,7 @@ import React from 'react';
 import {  Link } from 'react-router-dom';
 
 import './styles.css';
+import './footer.css';
 
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import HomeIcon from '@material-ui/icons/Home'
@@ -9,6 +10,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import StarIcon from '@material-ui/icons/Star';
 import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
+import HelpIcon from '@material-ui/icons/Help';
 
 import logo from './img/logo1.png';
 
@@ -19,7 +21,8 @@ function sideBar() {
         profile: <AccountCircleIcon />,
         ranking: <StarIcon />,
         challenges: <EmojiEventsOutlinedIcon />,
-        analytics: <EqualizerIcon />
+        analytics: <EqualizerIcon />,
+        help: <HelpIcon />
     }
 
     return (
@@ -61,7 +64,9 @@ function sideBar() {
                 <span className='painel-span'>Indicadores</span>
                 </Link>
             </div>
-                <footer></footer>
+                <footer className='footer'>
+                    <i className='footer-div' data-content='se definido' data-trigger='hover'>{icons.help}</i>
+                </footer>
              </div>
             
         </aside>

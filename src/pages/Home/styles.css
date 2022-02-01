@@ -12,7 +12,7 @@
 
 .square-link-processos {
     height: 28%;
-    width: 36%;
+    width: 30vw;
     margin: 0.5rem;
     transition: all 0.2s ease;
     color: #f9f9f9;
@@ -52,7 +52,7 @@
 
 .square-link-ata {
     height: 180px;
-    width: 36%;
+    width: 30vw;
     margin: 0.5rem;
     transition: all 0.2s ease;
     color: #0f54a3;
@@ -93,7 +93,7 @@
 
 .square-link-boletim {
     height: 180px;
-    width: 36%;
+    width: 30vw;
     margin: 0.4rem;
     transition: all 0.2s ease;
     color: #f9f9f9;

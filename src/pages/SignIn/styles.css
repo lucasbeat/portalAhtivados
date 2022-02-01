@@ -57,5 +57,6 @@
 
 .login-content .form .link {
     margin-top: 20px;
+    text-decoration: none;
     cursor: pointer;
 }
