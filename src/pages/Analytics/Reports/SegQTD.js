@@ -5,6 +5,7 @@ import api from '../../../services/api';
 import  DatePicker  from 'react-datepicker';
 import { Pie } from 'react-chartjs-2';
 import moment from "moment";
+import { toast } from 'react-toastify';
 
 import "react-datepicker/dist/react-datepicker.css";
 import '../styles.css';
@@ -32,6 +33,10 @@ const SegQTD = () => {
 
   formatedStartDate.push(start)
   formatedEndDate.push(end)
+
+  if(end < start){
+    toast.error('A data final precisa ser maior que a data inicial!', {toastId: "Error-id-01"});
+  }
   
   const data = {
     "startDate": `${formatedStartDate[0]}`,
