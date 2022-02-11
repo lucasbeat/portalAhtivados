@@ -1,38 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import '../styles.css';
+import React, { useEffect, useState } from "react";
+import "../styles.css";
 
-import api from '../../../services/api';
+import api from "../../../services/api";
 
-import  { Bar } from 'react-chartjs-2';
+import { Bar } from "react-chartjs-2";
 
-import colors from '../../../utils/colors';
+import colors from "../../../utils/colors";
 
 import "chartjs-plugin-datalabels";
 
-
 function Home() {
-    const [ticketsQTD, setticketsQTD] = useState([]);
+  const [ticketsQTD, setticketsQTD] = useState([]);
 
-    const labels = colors;
-    const backgroundColor = [];
-    const borderColor = [];
-    for(let i = 0; i < labels.length; i++){
-      const r = Math.floor(Math.random() * 255);
-      const g = Math.floor(Math.random() * 255);
-      const b = Math.floor(Math.random() * 255);
-      backgroundColor.push('rgba('+r+', '+g+', '+b+', 0.6)');
-      borderColor.push('rgba('+r+', '+g+', '+b+', 7)');
-    }
-  
-  
-    // Quantidade de tickets por agente
-    const chartTickets = () => {
-      let segTicketQtd = [];
-      let segTicketName = [];
-  
-      api.get('listTickets')
-      .then(res => {
-        for(const dataObj of res.data){
+  const labels = colors;
+  const backgroundColor = [];
+  const borderColor = [];
+  for (let i = 0; i < labels.length; i++) {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    backgroundColor.push("rgba(" + r + ", " + g + ", " + b + ", 0.6)");
+    borderColor.push("rgba(" + r + ", " + g + ", " + b + ", 7)");
+  }
+
+  // Quantidade de tickets por agente
+  const chartTickets = () => {
+    let segTicketQtd = [];
+    let segTicketName = [];
+
+    api
+      .get("listTickets")
+      .then((res) => {
+        for (const dataObj of res.data) {
           segTicketQtd.push(parseInt(dataObj.QTD_TICKTS));
           segTicketName.push(String(dataObj.RESPONSAVEL));
         }
@@ -40,40 +39,45 @@ function Home() {
           labels: segTicketName,
           datasets: [
             {
-              label: '',
+              label: "",
               data: segTicketQtd,
               backgroundColor: backgroundColor,
               borderColor: borderColor,
               borderWidth: 1,
-              hoverOffset: 4
-            }
-          ]
-        })
-  
-      }).catch(err => {
-        console.error(err);
+              hoverOffset: 4,
+            },
+          ],
+        });
       })
-    }
-  
-    useEffect(() => {
-      chartTickets()
-       // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+      .catch((err) => {
+        console.error(err);
+      });
+  };
 
+  useEffect(() => {
+    chartTickets();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-    let options = {
-      plugins: {
-        datalabels: {
-          color: "Black"
-        }
-      }
-    };
-  
-    return (
-      <div className='agent-qtd'>
-      <Bar type='bar' options={options} height={60} width={200} data={ticketsQTD} />
+  let options = {
+    plugins: {
+      datalabels: {
+        color: "Black",
+      },
+    },
+  };
+
+  return (
+    <div className="agent-qtd">
+      <Bar
+        type="bar"
+        options={options}
+        height={60}
+        width={200}
+        data={ticketsQTD}
+      />
     </div>
-  )
+  );
 }
 
 export default Home;

@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import '../../App.css';
-import './styles.css';
+import "../../App.css";
+import "./styles.css";
 
-import Header from '../../components/Header/Header';
-import SideBar from '../../components/SideBar/sideBar';
+import Header from "../../components/Header/Header";
+import SideBar from "../../components/SideBar/sideBar";
 
 function AnalyticsAdvanced() {
-    return (
-        <>
-         <SideBar />
-        <div className='content'>
-        <Header title='Indicadores Avançados'></Header>
+  return (
+    <>
+      <SideBar />
+      <div className="content">
+        <Header title="Indicadores Avançados"></Header>
         <div>
-            <h1>Indicadores que serão mais avançados</h1>
+          <h1>Indicadores que serão mais avançados</h1>
         </div>
-        </div>
-        </>
-    )
+      </div>
+    </>
+  );
 }
 
-export default AnalyticsAdvanced
+export default AnalyticsAdvanced;
