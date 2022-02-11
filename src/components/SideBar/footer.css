@@ -1,21 +1,29 @@
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    margin-top: 50px;
-    height: 70%;
+    align-items: center;
+    height: 100%;
     width: 100%;
     background-color: #3A3A45;
+
+    border: 1px solid red;
 
     
 }
 
-.footer .footer-div {
+ .footer-help {
     display: flex;
     justify-content: center;
-    margin-bottom: 30%;
-    height: 30%;
+    align-self: center;
+    margin-bottom: 30px;
+    height: 15%;
     width: 30%;
     cursor: pointer;
+}
+
+.footer-pontoweb-improvements {
+    cursor: pointer;
+
 }
 

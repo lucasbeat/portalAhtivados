@@ -11,6 +11,7 @@ import StarIcon from '@material-ui/icons/Star';
 import EmojiEventsOutlinedIcon from '@material-ui/icons/EmojiEventsOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import HelpIcon from '@material-ui/icons/Help';
+import ComputerIcon from '@material-ui/icons/Computer';
 
 import logo from './img/logo1.png';
 
@@ -22,7 +23,8 @@ function sideBar() {
         ranking: <StarIcon />,
         challenges: <EmojiEventsOutlinedIcon />,
         analytics: <EqualizerIcon />,
-        help: <HelpIcon />
+        help: <HelpIcon />,
+        computer: <ComputerIcon />
     }
 
     return (
@@ -31,7 +33,7 @@ function sideBar() {
             <header className='menu-header'>
                 <img className='company-logo' src={logo} alt='logo'></img>
             </header>
-
+            
             <div className='menu-app'>
                 <i className='people-icon'>{icons.people}</i>
                 <span className='span-frase'>Seja Bem Vindo(a)</span>
@@ -65,7 +67,8 @@ function sideBar() {
                 </Link>
             </div>
                 <footer className='footer'>
-                    <i className='footer-div' data-content='se definido' data-trigger='hover'>{icons.help}</i>
+                    <i className='footer-help' data-content='se definido' data-trigger='hover'>{icons.help}</i>
+                    <i className="footer-pontoweb-improvements">{icons.computer}</i>
                 </footer>
              </div>
             
